@@ -1,0 +1,21 @@
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+.hobby-card,
+.work-item,
+.about-content {
+    opacity: 0;
+    transform: translateY(40px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.hobby-card.show,
+.work-item.show,
+.about-content.show {
+    opacity: 1;
+    transform: translateY(0);
+}
